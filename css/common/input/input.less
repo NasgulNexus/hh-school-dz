@@ -1,0 +1,87 @@
+.input {
+  
+
+  &_error {
+      border-color: #c52929;
+  }
+
+  &_error-text {
+      position: absolute;
+      margin-top: 5px;
+      right: 0;
+      border: 1px solid;
+      background-color: rosybrown;
+      padding: 3px; 
+      z-index: 9999;  
+  }
+  &__field {
+    margin-top: 10px;
+    display: flex;
+  }
+
+  &__brim {
+    height: 38px;
+    width: 91%;
+    background: transparent;
+    border: 1px solid #DFDEDD;
+    font: 14px/(@control-height - 2px) Arial, sans-serif;
+    padding: 0 10px;
+
+    @media @screen-gt-s {
+        width: 320px;
+    }
+
+    @media @screen-gt-m {
+        width: 530px;
+    }
+  }
+
+  &__brim::-webkit-input-placeholder {
+    color: #AEB5B9;
+  }
+
+  &__phone {
+
+  &__region {
+    width: 18px;
+  }
+
+  &__cod {
+    width: 63px;
+  }
+
+  &__number {
+    flex-grow: 1;
+}
+}
+
+  &__address {
+  height: 100px;
+  width:  100%;
+  margin-bottom: 12px;
+  }
+}
+
+.telephone-input {
+  display: flex;
+  padding: 0;
+
+  &__country-code {
+      width : 38px;
+      margin: -1px 0 0 -1px;
+  }
+
+  &__code {
+      width : 63px;
+      margin: -1px 0 0 -1px;
+  }
+
+  &__number {
+      margin   : -1px 0 0 -1px;
+      flex-grow: 1;
+  }
+}
+
+.input-wrapper {
+  position: relative;
+}

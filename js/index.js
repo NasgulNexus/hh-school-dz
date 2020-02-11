@@ -1,0 +1,10 @@
+import './grid';
+import './slider';
+import './cities';
+//import './form/index';
+import './popup';
+import './order-form/order-form';
+//import './form3/validation';
+//import './form3/forSubmit';
+//import './form3/areas';
+import './validations/validation'

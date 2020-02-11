@@ -1,0 +1,137 @@
+.popup-wrapper {
+    width: 100vw;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: #ffffff;
+
+}
+
+.product-sizes {
+
+    box-sizing: border-box;
+    width: 280px;
+    padding: 20px 34px;
+
+    @media @screen-gt-s {
+        width: 330px;
+        padding: 20px 20px;
+    }
+
+
+    &__content {
+        text-align: center;
+    }
+
+    &__image-container {
+
+        position: relative;
+        margin-bottom: 10px;
+        font-size: 0;
+    }
+
+    &__image {
+        max-width: 100%;
+    }
+
+    &__sale {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: #212122;
+        top: 10px;
+        left: 10px;
+        color: #fff;
+        text-align: center;
+        font: 12px/38px @font-family-heading;
+
+    }
+
+    &__name {
+        font: bold 16px/1.2 @font-family-heading;
+        margin-bottom: 10px;
+
+        @media @screen-gt-m {
+            font: bold 18px/22px @font-family-heading;   
+        }
+
+    }
+
+    &__old-price {
+        text-decoration: line-through;
+        color: #AEB5B9;
+        margin-right: 10px;
+    }
+
+    &__description {
+        font: normal 14px/20px Arial;
+        margin-bottom: 10px; 
+        color: #666666;  
+    }
+
+    &__close-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @media @screen-gt-m {
+            display: none;
+        }
+
+    }
+
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    user-select: none; 
+    margin: 15px 0;
+    padding: 0;
+}
+
+.sizes-item {
+
+    box-sizing: border-box;
+    position: relative;
+    height: 38px;
+    width: 36px; 
+    display: block;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    border: 1px solid #DFDEDD;
+    margin: -1px 0 0 -1px;
+
+    @media @screen-gt-s {
+        height: 38px;
+        width: 49px;     
+    }
+
+    span {
+        height: 100%;
+        width: 100%;
+        display: block; 
+        background-color: #ffffff;
+        font: 14px Arial, sans-serif;
+        line-height: @control-height;
+    }
+
+    &__input {
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        cursor: pointer;
+        opacity: 0;
+        &:checked~span {
+            background-color: #EEEEEE;       
+        }
+    }
+
+} 
